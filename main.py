@@ -1,15 +1,16 @@
+from dotenv import dotenv_values
 import paho.mqtt.client as mqtt
 import json
-
+config = dotenv_values(".env")
 
 class MQTTListener:
-    def __init__(self, ip, port, username, password) -> None:
+    def __init__(self, ip, port, username, password, topic) -> None:
         self.ip = ip
         self.port = port
         self.client = mqtt.Client()
         self.username = username
         self.password = password
-        self.topic = ""
+        self.topic = topic
 
     # The callback for when the client receives a CONNACK response from the server.
     def on_connect(self, client, userdata, flags, rc):
@@ -36,5 +37,5 @@ class MQTTListener:
         # manual interface.
         self.client.loop_forever()
         
-my_client = MQTTListener("", 1883, "", "")
+my_client = MQTTListener("93.13.93.22", 1883, config["MQTT_USER"], config["MQTT_PASS"], "test/antoine/sub")
 my_client.start()
