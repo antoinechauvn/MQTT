@@ -3,6 +3,7 @@ import paho.mqtt.client as mqtt
 import json
 config = dotenv_values(".env")
 
+
 class MQTTListener:
     def __init__(self, ip, port, username, password, topic) -> None:
         self.ip = ip
