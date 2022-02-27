@@ -7,6 +7,8 @@
 
 De nombreux projets mettent en œuvre MQTT :
 
->Facebook Messenger : Facebook a utilisé des aspects de MQTT dans Facebook Messenger, cependant on ne connaît pas exactement ce qui est utilisé de MQTT dans Facebook Messenger ni pourquoi. 4
->La dernière version du système de contrôle de signalisation de IECC Scalable DeltaRail utilise MQTT pour les communications entre les différentes parties du système et les composants du système de signalisation.5
+>Facebook Messenger : Facebook a utilisé des aspects de MQTT dans Facebook Messenger, cependant on ne connaît pas exactement ce qui est utilisé de MQTT dans Facebook Messenger ni pourquoi.
+
+>La dernière version du système de contrôle de signalisation de IECC Scalable DeltaRail utilise MQTT pour les communications entre les différentes parties du système et les composants du système de signalisation.
+
 >Dans un livre rouge intitulé Building Smarter Planet Solutions with MQTT and IBM WebSphere MQ Telemetry IBM décrit plusieurs exemples d'applications dans le domaine de la santé et de l'énergie. 
