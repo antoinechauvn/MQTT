@@ -38,5 +38,7 @@ class MQTTListener:
         # manual interface.
         self.client.loop_forever()
         
-my_client = MQTTListener("93.13.93.22", 1883, config["MQTT_USER"], config["MQTT_PASS"], "test/antoine/sub")
-my_client.start()
+        
+if __name__ == "__main__":
+    my_client = MQTTListener("93.13.93.22", 1883, config["MQTT_USER"], config["MQTT_PASS"], "test/antoine/sub")
+    my_client.start()
